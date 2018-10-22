@@ -10,8 +10,8 @@
 # note: server looks into public first
 
 # create new rails app
-# - rails new <name>
-# - cd <name>
+# - rails new <APP NAME>
+# - cd <APP NAME>
 # - rails server
 
 # generating a controller (with associated view)
@@ -28,3 +28,23 @@
 # rake tasks is ruby make
 
 # HTTParty Gem: restful web services client
+
+# deployment (Heroku)
+#
+# username: random@michaelsjoberg.com
+# password: Mi*****!
+#
+# command: heroku login (enter details)
+# command: heroku create <APP NAME>
+# 
+# heroku requires an git repo at top level:
+# - git init
+# - git add .
+# - git commit -m init
+#
+# rvm use 2.3.8 (or whatever required)
+#
+# git remote -v (to check repo)
+# git push heroku master (to deploy to heroku)
+# heroku open (to open)
+
