@@ -5,10 +5,14 @@
 # db: database files and migration scripts
 # public: static files
 #
-# Gemfile: dependencies
+# gemfile: dependencies
 #
-# Note: server looks into public first
-# 
+# note: server looks into public first
+
+# create new rails app
+# - rails new <name>
+# - cd <name>
+# - rails server
 
 # generating a controller (with associated view)
 #
@@ -21,4 +25,6 @@
 # evaluate code: <% RUBY CODE HERE %>
 # output: <%= RUBY CODE HERE %>
 
-# Rake tasks is ruby make
+# rake tasks is ruby make
+
+# HTTParty Gem: restful web services client
