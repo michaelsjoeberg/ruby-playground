@@ -42,7 +42,7 @@
 # - git add .
 # - git commit -m init
 #
-# rvm use 2.3.8 (or whatever required)
+# rvm use 2.4.5 (or whatever required)
 #
 # git remote -v (to check repo)
 # git push heroku master (to deploy to heroku)
