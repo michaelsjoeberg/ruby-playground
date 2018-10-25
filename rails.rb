@@ -48,3 +48,11 @@
 # git push heroku master (to deploy to heroku)
 # heroku open (to open)
 
+# scaffolding
+#
+# > cd <APP NAME>
+# > rails g scaffold <MODEL> <COLUMN> <COLUMN>:<TYPE>
+#       eg. rails g scaffold car make color year:integer
+#
+# rake db:migrate (to migrate/ update database with new model)
+
