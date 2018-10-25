@@ -56,3 +56,25 @@
 #
 # rake db:migrate (to migrate/ update database with new model)
 
+# SQLite3 database by default
+#
+# > rails db
+#
+# .tables
+# .headers on
+# .mode columns
+# select * from cars;
+# .exit
+#
+# add column:
+# > rails g migration <MODEL> '<COLUMN>:<TYPE>'
+#       eg. rails g migration add_price_to_cars 'price:decimal{10,2}'
+#
+# rake db:migrate (to migrate/ update database with new model)
+#
+# rename column (manually add change to migrate file):
+# > rails g migration rename_make_to_company
+#
+#
+# rollback: rake db:rollback (previous migration)
+
