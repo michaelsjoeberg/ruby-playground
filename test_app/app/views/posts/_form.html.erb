@@ -12,13 +12,13 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :title %>
+    <%= form.label :title, "This is the title" %>
     <%= form.text_field :title %>
   </div>
 
   <div class="field">
     <%= form.label :content %>
-    <%= form.text_area :content %>
+    <%= form.text_area :content, placeholder: "This is a placeholder" %>
   </div>
 
   <div class="actions">
