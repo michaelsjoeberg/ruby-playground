@@ -55,6 +55,10 @@
 #       eg. rails g scaffold car make color year:integer
 #
 # rake db:migrate (to migrate/ update database with new model)
+#
+# generate controller for existing model
+#       eg. rails g scaffold_controller book name author
+#
 
 # SQLite3 database by default
 #
@@ -77,4 +81,13 @@
 #
 #
 # rollback: rake db:rollback (previous migration)
+
+# add seed data to db/seeds.rb
+#
+# > rake db:seed
+
+# nested resources (notes for a book)
+#
+# generate empty comtroller
+#       e.g. rails g controller notes
 
