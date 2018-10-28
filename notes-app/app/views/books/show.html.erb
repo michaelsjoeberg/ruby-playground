@@ -1,14 +1,26 @@
-<p id="notice"><%= notice %></p>
+<div class="book">
+    <%= content_tag :span, "#{@book.name} (#{@book.author})", class: "book-title" %>
+    <%= link_to 'Edit', edit_book_path(@book) %>
+</div>
 
-<p>
-  <strong>Name:</strong>
-  <%= @book.name %>
-</p>
+<div class="notes">
+    <%= render @book.notes %>
+</div>
 
-<p>
-  <strong>Author:</strong>
-  <%= @book.author %>
-</p>
+<div>
+    <%= form_for([@book, @book.notes.new]) do |form| %>
+        <div class="field">
+            <%= form.label :title %>
+            <%= form.text_field :title %>
+        </div>
+        <div class="field">
+            <%= form.label :note %>
+            <%= form.text_area :note, size: "25x5" %>
+        </div>
+        <div class="actions">
+            <%= form.submit "Add new note" %>
+        </div>
+    <% end %>
+</div>
 
-<%= link_to 'Edit', edit_book_path(@book) %> |
 <%= link_to 'Back', books_path %>

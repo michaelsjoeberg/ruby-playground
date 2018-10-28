@@ -1,3 +1,37 @@
 // Place all the styles related to the notes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$border-radius      : .25rem;
+$font-weight-bold   : 900;
+$padding-sm         : 10px;
+$margin-sm          : 10px;
+$margin-md          : 20px;
+
+$color-light        : rgba(0,0,0,0.15);
+
+.book-title {
+    font-size           : 16px;
+    font-weight         : $font-weight-bold;
+}
+
+.note-title {
+    font-size           : 12px;
+    font-weight         : $font-weight-bold;
+}
+
+.book { padding-bottom: $padding-sm; }
+
+.note {
+    background          : transparent;
+    margin              : $margin-md;
+    padding             : $padding-sm;
+    border              : 1px solid $color-light;
+    border-radius       : $border-radius;
+}
+
+.field,
+.actions { margin: $margin-sm; }
+
+#notice { color: green; }
+#alert { color: red; }
