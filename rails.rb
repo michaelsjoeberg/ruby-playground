@@ -91,3 +91,10 @@
 # generate empty comtroller
 #       e.g. rails g controller notes
 
+# sessions
+# > rails g controller sessions new create destroy
+#
+#
+
+
+
