@@ -1,2 +1,18 @@
-<h1>Sessions#new</h1>
-<p>Find me in app/views/sessions/new.html.erb</p>
+<h1>Login</h1>
+
+<!-- form for reviewer but submitting to sessions -->
+<%= form_for(:reviewer, url: sessions_path) do |form| %>
+    <div class="field">
+        <%= form.label :name %><br/>
+        <%= form.text_field :name %>
+    </div>
+
+    <div class="field">
+        <%= form.label :password %><br/>
+        <%= form.password_field :password %>
+    </div>
+
+    <div class="actions">
+        <%= form.submit "Login" %>
+    </div>
+<% end %>
