@@ -1,4 +1,7 @@
 class SessionsController < ApplicationController
+    # skip login on new and create
+    skip_before_action :ensure_login, only: [:new, :create]
+
     def new
         # Login Page - new.html.erb
     end
