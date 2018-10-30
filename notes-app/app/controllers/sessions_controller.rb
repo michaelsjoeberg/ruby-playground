@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
 
     def create
         # create new reviewer based on form submission
-        reviewer = Reviewer.find_by(name: paramns[:reviewer][:name])
+        reviewer = Reviewer.find_by(name: params[:reviewer][:name])
         password = params[:reviewer][:password]
 
         if reviewer && reviewer.authenticate(password)
