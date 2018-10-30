@@ -47,6 +47,18 @@
 # git remote -v (to check repo)
 # git push heroku master (to deploy to heroku)
 # heroku open (to open)
+#
+# migrate database: heroku run rake db:migrate
+# seed database: heroku run rake db:seed
+
+# required to deploy on Heroku (Gemfile)
+#
+# group :production do
+#   gem 'pg'
+#   gem 'rails_12factor'
+# end
+#
+# move sqlite to development and test groups
 
 # scaffolding
 #
