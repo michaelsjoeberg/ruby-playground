@@ -1,8 +1,6 @@
 # methods are public by default
-
-# declare private, protected, public methods
 class Algorithm
-    
+
     # private methods
     private
         def private_method

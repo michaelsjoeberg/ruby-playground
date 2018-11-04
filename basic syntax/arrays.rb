@@ -4,13 +4,12 @@
 
 # heterogeneous types
 array_h = [1, "two", :three]
-
-puts array_h[1]
+puts array_h[1]                 # two
 
 # words
 array_words = %w{ what a great day today"}
 
-puts array_words[-2]
+puts array_words[-2]            # day
 puts "#{array_words.first} - #{array_words.last}"
 puts array_words[-3, 2] # go back 3 and take 2
 p array_words[2..4] # select a range
