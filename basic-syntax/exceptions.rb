@@ -4,25 +4,20 @@ begin
 rescue Exception => e
     puts e.message
     # do something
-
 end
 
 # check if something exists
 if File.exists? 'no_file.txt'
     # handle file
-
 else
     # handle no file
-
 end
 
 # unless something meet condition
 unless @variable
     # true
-
 else
     # false
-
 end
 
 '''
