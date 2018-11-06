@@ -1,18 +1,28 @@
-# read from a file
-File.foreach('text.txt') do |line|
-    puts line
+# read from file
+File.open('path/to/file', 'r') do |file|
+    file.read
+end
 
-    p line
+# or 
+content = File.open('path/to/file', 'r')
 
-    # remove newline characters
-    p line.chomp
+# read each line from file
+File.foreach('path/to/file') do |line|
+    # do something
+end
 
-    # array of words
-    p line.split
+# or 
+content.readlines.each do |line|
+    # do something
 end
 
 # write to a file
-File.open('test.txt', 'w') do |file|
-    file.puts "First line"
-    file.puts "Second line"
+File.open('path/to/file', 'w') do |file|
+    file.puts "This is some text to write."
 end
+
+'''
+Michael Sjoeberg
+2018-11-06
+https://github.com/michaelsjoeberg/ruby-playground/blob/master/basic-syntax/files.rb
+'''
