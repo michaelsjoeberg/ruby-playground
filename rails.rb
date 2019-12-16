@@ -31,9 +31,6 @@
 
 # deployment (Heroku)
 #
-# username: random@michaelsjoberg.com
-# password: Mi*****!
-#
 # command: heroku login (enter details)
 # command: heroku create <APP NAME>
 # 
